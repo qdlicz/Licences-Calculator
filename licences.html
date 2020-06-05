@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Licences</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/app.js" defer></script>
+  </head>
+
+  <body>
+    <h1>
+      Price list is filled with flight of imagination, do not take them serious
+      :)
+    </h1>
+    <button onclick="toggle('prices', 'table');" class="priceList">
+      Price list
+    </button>
+    <table id="prices"></table>
+
+    <form class="form1" id="licencesForm">
+      <label for="storeName">Store name:</label>
+      <input
+        type="text"
+        id="storeName"
+        name="storeName"
+        placeholder="Enter store name"
+        onchange="getFormData();"
+      />
+      <label for="storeNumber">Store number:</label>
+      <input
+        type="text"
+        id="storeNumber"
+        name="storeNumber"
+        placeholder="Enter store number in 4 digit format e.g. 0455"
+        onchange="getFormData();"
+      />
+
+      <label for="tillsNumber"> Tills: </label>
+      <input
+        type="text"
+        id="tillsNumber"
+        name="tillsNumber"
+        placeholder="Enter number of tills"
+        onchange="getFormData();"
+      />
+
+      <label for="analogCameras"> Analog cameras: </label>
+      <input
+        type="text"
+        id="analogCameras"
+        name="analogCameras"
+        placeholder="Enter number of analog cameras"
+        onchange="getFormData();"
+      />
+
+      <label for="IPCameras"> IP cameras: </label>
+      <input
+        type="text"
+        id="IPCameras"
+        name="IPCameras"
+        placeholder="Enter number of IP cameras"
+        onchange="getFormData();"
+      />
+
+      <label for="coreCheckbox">Core package: </label>
+      <input
+        type="checkbox"
+        id="coreCheckbox"
+        name="coreCheckbox"
+        onclick="getFormData();"
+      />
+
+      <button onclick="getFormData();" disabled>Submit</button>
+    </form>
+
+    <div id="orderID" class="orderID" style="display: none;">
+      Order
+    </div>
+    <table id="order"></table>
+  </body>
+</html>

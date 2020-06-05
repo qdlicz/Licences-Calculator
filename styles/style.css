@@ -1,0 +1,120 @@
+ body {
+     background-color: #444444;
+ }
+
+ h1 {
+     text-align: center;
+     color: #c1c1c1;
+     font-size: 22px;
+     font-weight: normal;
+     ;
+ }
+
+ form {
+     display: grid;
+     padding: 1em;
+     background: #f9f9f9;
+     border: 1px solid #c1c1c1;
+     margin: 2rem auto 0 auto;
+     max-width: 600px;
+     padding: 1em;
+ }
+
+ form input {
+     background: #fff;
+     border: 1px solid #9c9c9c;
+ }
+
+ form button {
+     background: lightgrey;
+     padding: 0.7em;
+     width: 100%;
+     border: 0;
+ }
+
+ form button:hover {
+     background: gold;
+ }
+
+ label {
+     padding: 0.5em 0.5em 0.5em 0;
+ }
+
+ input {
+     padding: 0.7em;
+     margin-bottom: 0.5rem;
+ }
+
+ input:focus {
+     outline: 3px solid gold;
+ }
+
+ @media (min-width: 400px) {
+     form {
+         grid-template-columns: 200px 1fr;
+         grid-gap: 5px;
+     }
+
+     label {
+         text-align: right;
+         grid-column: 1 / 2;
+     }
+
+     input,
+     button {
+         grid-column: 2 / 3;
+     }
+ }
+
+ table {
+     background-color: #c5c5c5;
+ }
+
+ th {
+     text-transform: capitalize;
+     background-color: #999999;
+ }
+
+ td {
+     padding-left: 5px;
+     padding-right: 5px;
+     text-align: right;
+ }
+
+ tr td:nth-child(3n + 1) {
+     text-align: left;
+ }
+
+ tr:nth-child(even) {
+     background-color: #f2f2f2;
+ }
+
+ .priceList {
+     margin: 0 auto;
+     margin-bottom: 10px;
+     margin-top: 15px;
+     display: block;
+ }
+
+ #prices {
+     margin-left: auto;
+     margin-right: auto;
+     display: none;
+ }
+
+ .orderID {
+     text-align: center;
+     margin-top: 30px;
+     color: #fff;
+     font-size: 18px;
+ }
+
+ #order {
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 30px;
+ }
+
+ #coreCheckbox {
+     margin-top: 10px;
+ }
